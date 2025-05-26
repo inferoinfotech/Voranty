@@ -1,0 +1,9 @@
+.FromWrapper {
+  margin-top: var(--space-xl);
+  gap: var(--space-xl);
+}
+
+.contentWrapper,
+.InputWrapper {
+  gap: var(--space-sm);
+}

@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+html {
+  font-family: var(--font-primary);
+  font-size: var(--html);
+}
+
+body {
+  font-size: var(--text-xl);
+  line-height: 1.5;
+  color: var(--clr-dark);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Font Family */
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+/* Font Family */
+
+/* Sizes */
+h1,
+.h1 {
+  font-size: var(--text-5xl);
+}
+
+h2,
+.h2 {
+  font-size: var(--text-4xl);
+}
+
+h3,
+.h3 {
+  font-size: var(--text-3xl);
+}
+
+h4,
+.h4 {
+  font-size: var(--text-2xl);
+}
+
+h5,
+.h5 {
+  font-size: var(--text-xl);
+}
+
+h6,
+.h6 {
+  font-size: var(--text-lg);
+}
+
+p,
+.p {
+  font-size: var(--text-sm);
+}
+
+/* Sizes End */
+
+/* Colors Start */
+
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+.clr-secondary {
+  color: var(--clr-secondary);
+}
+
+.clr-white {
+  color: var(--clr-white);
+}
+
+.clr-black {
+  color: var(--clr-black);
+}
+
+.clr-dark {
+  color: var(--clr-dark);
+}
+
+.clr-success {
+  color: var(--clr-success);
+}
+
+.clr-warning {
+  color: var(--clr-warning);
+}
+
+.clr-danger {
+  color: var(--clr-danger);
+}
+
+.clr-gray {
+  color: var(--clr-gray);
+}
+
+.clr-cult {
+  color: var(--clr-cult);
+}
+
+.clr-pearl {
+  color: var(--clr-pearl);
+}
+
+.clr-fuchsia {
+  color: var(--clr-fuchsia);
+}
+
+.clr-Pearls {
+  color: var(--clr-Pearls);
+}
+
+.clr-cyan {
+  color: var(--clr-cyan);
+}
+
+.clr-lavender {
+  color: var(--clr-lavender);
+}
+
+.clr-snow {
+  color: var(--clr-snow);
+}
+
+.clr-violet {
+  color: var(--clr-violet);
+}
+
+.clr-foundation {
+  color: var(--clr-foundation);
+}
+
+.clr-silver {
+  color: var(--clr-silver);
+}
+
+/* Color End */
+
+/* Background Color Start */
+.bg-primary {
+  background-color: var(--clr-primary);
+}
+
+.bg-secondary {
+  background-color: var(--clr-secondary);
+}
+
+.bg-white {
+  background-color: var(--clr-white);
+}
+
+.bg-black {
+  background-color: var(--clr-black);
+}
+
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+
+.bg-success {
+  background-color: var(--clr-success);
+}
+
+.bg-warning {
+  background-color: var(--clr-warning);
+}
+
+.bg-danger {
+  background-color: var(--clr-danger);
+}
+
+.bg-gray {
+  background-color: var(--clr-gray);
+}
+
+.bg-cult {
+  background-color: var(--clr-cult);
+}
+
+.bg-pearl {
+  background-color: var(--clr-pearl);
+}
+
+.bg-fuchsia {
+  background-color: var(--clr-fuchsia);
+}
+
+.bg-Pearls {
+  background-color: var(--clr-Pearls);
+}
+
+.bg-cyan {
+  background-color: var(--clr-cyan);
+}
+
+.bg-lavender {
+  background-color: var(--clr-lavender);
+}
+
+.bg-snow {
+  background-color: var(--clr-snow);
+}
+
+.bg-violet {
+  background-color: var(--clr-violet);
+}
+
+.bg-foundation {
+  background-color: var(--clr-foundation);
+}
+
+/* Background Colors End */
+/* Utilities */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rounded-pill {
+  border-radius: 9999px;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.ant-divider-horizontal {
+  margin: var(--space-md) 0;
+}
+
+/* Utilities End */
+
+/* Common CSS For And Components Start */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.card-grid h6:first-child {
+  color: var(--clr-gray);
+}
+
+.card-grid h6:not(:first-child) {
+  text-align: end;
+}
+
+/* Common CSS For And Components End */
+
+/* TEXT CLAMP */
+.text-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-1 {
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.announcement-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.word-break {
+  word-break: break-all;
+}
+
+.edit-btn.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover,
+.ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+  color: var(--clr-success);
+  border-color: var(--clr-success);
+}
+
+.edit-btn {
+  color: var(--clr-success);
+}
+
+.view-btn.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover,
+.ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+  color: var(--clr-cult);
+  border-color: var(--clr-cult);
+}
+
+.view-btn {
+  color: var(--clr-cult);
+}
+
+.delete-btn.ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover,
+.ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+  color: var(--clr-danger);
+  border-color: var(--clr-danger);
+}
+
+.delete-btn {
+  color: var(--clr-danger);
+}

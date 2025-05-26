@@ -1,0 +1,21 @@
+.hero-img {
+    background-color: #37B5FF;
+    background-image: url('../../assets/images/cover/73edc829-89e3-4a8b-b259-da132f2765b4.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* Light Blue : #37B5FF */
+/* Dark Blue : #0B2838 */
+
+
+.img-hero{
+    width: 1029px !important;
+    height: 580px !important;
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    top: -61px;
+}

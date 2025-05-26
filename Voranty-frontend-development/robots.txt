@@ -1,0 +1,19 @@
+# Allow all crawlers to access the site
+User-agent: *
+Disallow:
+
+# Block access to build-related files and static assets
+Disallow: /static/
+Disallow: /node_modules/
+
+# Prevent search engines from indexing the API endpoints or admin areas
+Disallow: /api/
+Disallow: /admin/
+
+# Allow access to important public files like images, CSS, and JavaScript
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Sitemap location (ensure your sitemap is available at this URL)
+Sitemap: https://yourdomain.com/sitemap.xml
